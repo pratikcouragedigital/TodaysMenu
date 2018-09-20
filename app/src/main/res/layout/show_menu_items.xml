@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:elevation="@dimen/_50sdp"
+        card_view:cardCornerRadius="@dimen/_10sdp"
+        card_view:cardElevation="@dimen/_2sdp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainRelativeLayout">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateRelativeLayout"
+                android:background="#3F51B5">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:id="@+id/imageFavicon"
+                    android:src="@drawable/menu_favicon"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_alignParentLeft="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Ram Maurya"
+                    android:id="@+id/clientName"
+                    android:textStyle="bold|italic"
+                    android:textColor="#FF7043"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/_15sdp"
+                    android:paddingLeft="@dimen/_18sdp"
+                    android:layout_toRightOf="@+id/imageFavicon"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12-Aug-2016"
+                    android:textSize="@dimen/_15sdp"
+                    android:id="@+id/date"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/menuTimingLinearLayout"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_below="@+id/dateRelativeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food Timing :"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/menuTimingLabel"
+                    android:layout_weight="0.39" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lunch"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/menuTiming"
+                    android:layout_toRightOf="@+id/menuTimingLabel"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_weight="1.14" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutIngredients"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_below="@+id/menuTimingLinearLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food :"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/ingredientsLabel"
+                    android:layout_weight="0.39" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sandwitch"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/ingredients"
+                    android:layout_toRightOf="@+id/ingredientsLabel"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_weight="1.14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutRemark"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_below="@+id/layoutIngredients">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food Remark :"
+                android:textSize="@dimen/_14sdp"
+                android:id="@+id/remarkLabel"
+                android:layout_weight="0.39" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spicy"
+                android:textSize="@dimen/_14sdp"
+                android:id="@+id/remark"
+                android:layout_toRightOf="@+id/remarkLabel"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_weight="1.14" />
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutMateRemark"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_below="@+id/layoutRemark">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cooking Food Remark :"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/mateRemarkLabel"
+                    android:layout_weight="0.39" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Try my best"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/mateRemark"
+                    android:layout_toRightOf="@+id/mateRemarkLabel"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_weight="1.14" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

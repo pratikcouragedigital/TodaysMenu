@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TodayMenu</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="country_prompt">Choose a country</string>
+
+    <string-array name="country_arrays">
+        <item>Select Timing :</item>
+        <item>BreakFast</item>
+        <item>Lunch</item>
+        <item>Snacks</item>
+        <item>Dinner</item>
+    </string-array>
+</resources>
